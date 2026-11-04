@@ -1,0 +1,1762 @@
+{
+ "source": "低腹敏食物的選擇（使用者提供之表格）",
+ "levels": {
+  "low": "低腹敏",
+  "high": "高腹敏",
+  "conditional": "有條件（看份量或熟度）"
+ },
+ "categories": [
+  "蔬菜",
+  "水果",
+  "奶類及乳製品",
+  "穀類",
+  "蛋白質",
+  "糖",
+  "堅果種子",
+  "茶飲",
+  "調味料",
+  "添加物"
+ ],
+ "foods": [
+  {
+   "id": "eggplant",
+   "name": "茄子",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "napa_cabbage",
+   "name": "白菜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "大白菜",
+    "娃娃菜"
+   ]
+  },
+  {
+   "id": "cabbage",
+   "name": "高麗菜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "甘藍",
+    "捲心菜"
+   ]
+  },
+  {
+   "id": "bell_pepper",
+   "name": "甜椒",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "彩椒",
+    "青椒"
+   ]
+  },
+  {
+   "id": "carrot",
+   "name": "胡蘿蔔",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "紅蘿蔔"
+   ]
+  },
+  {
+   "id": "daikon",
+   "name": "白蘿蔔",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "蘿蔔",
+    "菜頭"
+   ]
+  },
+  {
+   "id": "cucumber",
+   "name": "黃瓜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "小黃瓜",
+    "大黃瓜"
+   ]
+  },
+  {
+   "id": "zucchini",
+   "name": "櫛瓜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "夏南瓜"
+   ]
+  },
+  {
+   "id": "spinach",
+   "name": "菠菜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "tomato",
+   "name": "番茄",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "蕃茄",
+    "小番茄",
+    "聖女番茄"
+   ]
+  },
+  {
+   "id": "bamboo_shoot",
+   "name": "竹筍",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "筍",
+    "綠竹筍",
+    "筍絲"
+   ]
+  },
+  {
+   "id": "bok_choy",
+   "name": "小白菜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "青江菜"
+   ]
+  },
+  {
+   "id": "choy_sum",
+   "name": "菜心",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "菜芯"
+   ]
+  },
+  {
+   "id": "wood_ear",
+   "name": "木耳",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "黑木耳",
+    "白木耳"
+   ]
+  },
+  {
+   "id": "okra",
+   "name": "秋葵",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "scallion_green",
+   "name": "蔥綠",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "青蔥綠色部分",
+    "蔥花（綠）"
+   ],
+   "note": "只限綠色部分；白色部分是高腹敏"
+  },
+  {
+   "id": "ginger",
+   "name": "薑",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "薑絲",
+    "薑片",
+    "生薑"
+   ]
+  },
+  {
+   "id": "asparagus",
+   "name": "蘆筍",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "cauliflower",
+   "name": "花椰菜",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "白花椰菜",
+    "花菜"
+   ]
+  },
+  {
+   "id": "pea",
+   "name": "豌豆",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "青豆仁"
+   ]
+  },
+  {
+   "id": "sugar_snap_pea",
+   "name": "甜豆",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "snow_pea",
+   "name": "荷蘭豆",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "broad_bean",
+   "name": "蠶豆",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "bitter_melon_wild",
+   "name": "山苦瓜",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "mushroom",
+   "name": "蘑菇",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "洋菇"
+   ]
+  },
+  {
+   "id": "shiitake",
+   "name": "香菇",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "乾香菇",
+    "冬菇"
+   ]
+  },
+  {
+   "id": "enoki",
+   "name": "金針菇",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "onion",
+   "name": "洋蔥",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "洋蔥絲",
+    "紫洋蔥"
+   ]
+  },
+  {
+   "id": "brussels_sprout",
+   "name": "球芽甘藍",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "抱子甘藍"
+   ]
+  },
+  {
+   "id": "garlic",
+   "name": "大蒜",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "蒜頭",
+    "蒜末",
+    "蒜泥",
+    "蒜片"
+   ]
+  },
+  {
+   "id": "shallot",
+   "name": "紅蔥頭",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "油蔥酥",
+    "油蔥"
+   ]
+  },
+  {
+   "id": "scallion_white",
+   "name": "蔥白",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "青蔥白色部分"
+   ],
+   "note": "白色部分；綠色部分是低腹敏"
+  },
+  {
+   "id": "kiwi",
+   "name": "奇異果",
+   "category": "水果",
+   "level": "conditional",
+   "aliases": [
+    "綠奇異果",
+    "金奇異果"
+   ],
+   "note": "綠、金皆可，約一顆 75g 以內為低"
+  },
+  {
+   "id": "grape",
+   "name": "葡萄",
+   "category": "水果",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "cantaloupe",
+   "name": "哈密瓜",
+   "category": "水果",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "melon",
+   "name": "香瓜",
+   "category": "水果",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "papaya",
+   "name": "木瓜",
+   "category": "水果",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "citrus",
+   "name": "柑橘",
+   "category": "水果",
+   "level": "low",
+   "aliases": [
+    "橘子",
+    "柳丁",
+    "橙"
+   ]
+  },
+  {
+   "id": "pineapple",
+   "name": "鳳梨",
+   "category": "水果",
+   "level": "low",
+   "aliases": [
+    "菠蘿"
+   ]
+  },
+  {
+   "id": "strawberry",
+   "name": "草莓",
+   "category": "水果",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "banana",
+   "name": "香蕉",
+   "category": "水果",
+   "level": "conditional",
+   "aliases": [],
+   "note": "未成熟（偏綠、無斑點）為低；已成熟（黃、有斑點）為高"
+  },
+  {
+   "id": "dragon_fruit",
+   "name": "火龍果",
+   "category": "水果",
+   "level": "low",
+   "aliases": [
+    "紅龍果"
+   ]
+  },
+  {
+   "id": "apple",
+   "name": "蘋果",
+   "category": "水果",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "cherry",
+   "name": "櫻桃",
+   "category": "水果",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "dried_fruit",
+   "name": "果乾",
+   "category": "水果",
+   "level": "high",
+   "aliases": [
+    "葡萄乾",
+    "芒果乾",
+    "蔓越莓乾"
+   ]
+  },
+  {
+   "id": "mango",
+   "name": "芒果",
+   "category": "水果",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "peach",
+   "name": "桃子",
+   "category": "水果",
+   "level": "high",
+   "aliases": [
+    "水蜜桃"
+   ]
+  },
+  {
+   "id": "pear",
+   "name": "梨子",
+   "category": "水果",
+   "level": "high",
+   "aliases": [
+    "水梨",
+    "西洋梨"
+   ]
+  },
+  {
+   "id": "plum",
+   "name": "李子",
+   "category": "水果",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "watermelon",
+   "name": "西瓜",
+   "category": "水果",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "avocado",
+   "name": "酪梨",
+   "category": "水果",
+   "level": "high",
+   "aliases": [
+    "牛油果"
+   ]
+  },
+  {
+   "id": "lychee",
+   "name": "荔枝",
+   "category": "水果",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "lactose_free_milk",
+   "name": "無乳糖牛奶",
+   "category": "奶類及乳製品",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "almond_milk",
+   "name": "杏仁奶",
+   "category": "奶類及乳製品",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "cheddar",
+   "name": "切達起司",
+   "category": "奶類及乳製品",
+   "level": "low",
+   "aliases": [
+    "巧達起司"
+   ]
+  },
+  {
+   "id": "parmesan",
+   "name": "帕米森起司",
+   "category": "奶類及乳製品",
+   "level": "low",
+   "aliases": [
+    "帕瑪森起司"
+   ]
+  },
+  {
+   "id": "milk",
+   "name": "牛奶",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": [
+    "鮮奶",
+    "鮮乳",
+    "拿鐵的奶"
+   ]
+  },
+  {
+   "id": "cream",
+   "name": "奶油",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": [
+    "鮮奶油"
+   ],
+   "note": "指鮮奶油（含乳糖）；塗麵包用的奶油（butter）屬低"
+  },
+  {
+   "id": "custard",
+   "name": "卡士達醬",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "condensed_milk",
+   "name": "煉乳",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "ice_cream",
+   "name": "冰淇淋",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": [
+    "霜淇淋"
+   ]
+  },
+  {
+   "id": "yogurt",
+   "name": "優格",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": [
+    "優酪乳"
+   ]
+  },
+  {
+   "id": "white_rice",
+   "name": "白米",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [
+    "白飯",
+    "米飯",
+    "稀飯",
+    "粥"
+   ]
+  },
+  {
+   "id": "brown_rice",
+   "name": "糙米",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [
+    "糙米飯"
+   ]
+  },
+  {
+   "id": "rice_noodle",
+   "name": "米粉",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [
+    "炒米粉",
+    "河粉",
+    "粿條",
+    "米苔目",
+    "越南河粉",
+    "米線"
+   ]
+  },
+  {
+   "id": "oats",
+   "name": "燕麥",
+   "category": "穀類",
+   "level": "conditional",
+   "aliases": [
+    "燕麥片"
+   ],
+   "note": "約 60g（約 6 匙）以內為低"
+  },
+  {
+   "id": "quinoa",
+   "name": "藜麥",
+   "category": "穀類",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "buckwheat_noodle",
+   "name": "蕎麥麵",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [
+    "蕎麥"
+   ],
+   "note": "市售蕎麥麵常混小麥粉，選 100% 蕎麥才是低"
+  },
+  {
+   "id": "sourdough",
+   "name": "酸麵包",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [
+    "酸種麵包"
+   ]
+  },
+  {
+   "id": "chinese_yam",
+   "name": "山藥",
+   "category": "穀類",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "corn",
+   "name": "玉米",
+   "category": "穀類",
+   "level": "conditional",
+   "aliases": [
+    "玉米粒"
+   ],
+   "note": "半根以內為低"
+  },
+  {
+   "id": "sweet_potato",
+   "name": "地瓜",
+   "category": "穀類",
+   "level": "conditional",
+   "aliases": [
+    "番薯",
+    "甘藷",
+    "甘薯",
+    "地瓜粉",
+    "番薯粉",
+    "烤地瓜"
+   ],
+   "note": "可食量約 75g"
+  },
+  {
+   "id": "potato",
+   "name": "馬鈴薯",
+   "category": "穀類",
+   "level": "conditional",
+   "aliases": [
+    "洋芋",
+    "薯條",
+    "薯泥"
+   ],
+   "note": "可食量約 75g"
+  },
+  {
+   "id": "taro",
+   "name": "芋頭",
+   "category": "穀類",
+   "level": "conditional",
+   "aliases": [],
+   "note": "可食量約 75g"
+  },
+  {
+   "id": "wheat_products",
+   "name": "含小麥、黑麥及大麥製品",
+   "category": "穀類",
+   "level": "high",
+   "aliases": [
+    "麵條",
+    "麵包",
+    "饅頭",
+    "包子",
+    "水餃皮",
+    "義大利麵",
+    "拉麵",
+    "烏龍麵",
+    "吐司",
+    "蛋糕",
+    "餅乾",
+    "麵衣",
+    "炸物外皮"
+   ],
+   "note": "一般市售麵或麵包幾乎都用麵粉製作"
+  },
+  {
+   "id": "fresh_meat",
+   "name": "新鮮肉類",
+   "category": "蛋白質",
+   "level": "low",
+   "aliases": [
+    "牛肉",
+    "豬肉",
+    "雞肉",
+    "魚肉",
+    "魚",
+    "羊肉"
+   ],
+   "note": "牛、豬、雞、魚等未加工肉類"
+  },
+  {
+   "id": "shrimp",
+   "name": "蝦",
+   "category": "蛋白質",
+   "level": "low",
+   "aliases": [
+    "蝦仁"
+   ]
+  },
+  {
+   "id": "egg",
+   "name": "蛋",
+   "category": "蛋白質",
+   "level": "low",
+   "aliases": [
+    "雞蛋",
+    "荷包蛋",
+    "炒蛋",
+    "水煮蛋"
+   ]
+  },
+  {
+   "id": "tofu",
+   "name": "豆腐",
+   "category": "蛋白質",
+   "level": "low",
+   "aliases": [
+    "板豆腐",
+    "老豆腐",
+    "豆干",
+    "豆乾"
+   ],
+   "note": "板豆腐、豆干等較硬的豆腐為低；嫩豆腐（絹豆腐）為高"
+  },
+  {
+   "id": "whole_beans",
+   "name": "整顆豆類",
+   "category": "蛋白質",
+   "level": "high",
+   "aliases": [
+    "紅豆",
+    "綠豆",
+    "黃豆",
+    "黑豆",
+    "鷹嘴豆",
+    "腰豆",
+    "扁豆",
+    "紅豆湯",
+    "綠豆湯"
+   ]
+  },
+  {
+   "id": "processed_meat",
+   "name": "加工過肉製品",
+   "category": "蛋白質",
+   "level": "high",
+   "aliases": [
+    "香腸",
+    "火腿",
+    "培根",
+    "熱狗",
+    "貢丸",
+    "肉鬆",
+    "雞塊"
+   ]
+  },
+  {
+   "id": "dark_chocolate",
+   "name": "黑巧克力",
+   "category": "糖",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "maple_syrup",
+   "name": "楓糖漿",
+   "category": "糖",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "maltose",
+   "name": "麥芽糖",
+   "category": "糖",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "sugar",
+   "name": "砂糖",
+   "category": "糖",
+   "level": "conditional",
+   "aliases": [
+    "白糖",
+    "蔗糖"
+   ],
+   "note": "通常可以耐受少量（約一到兩茶匙）"
+  },
+  {
+   "id": "hfcs",
+   "name": "高果糖（玉米）糖漿",
+   "category": "糖",
+   "level": "high",
+   "aliases": [
+    "果糖",
+    "高果糖糖漿",
+    "玉米糖漿",
+    "果葡糖漿",
+    "含糖汽水"
+   ],
+   "note": "市售含糖汽水、醬料多含高果糖糖漿"
+  },
+  {
+   "id": "honey",
+   "name": "蜂蜜",
+   "category": "糖",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "sugar_free_candy",
+   "name": "無糖糖果",
+   "category": "糖",
+   "level": "high",
+   "aliases": [
+    "無糖口香糖"
+   ]
+  },
+  {
+   "id": "macadamia",
+   "name": "夏威夷豆",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": [
+    "夏威夷果"
+   ]
+  },
+  {
+   "id": "peanut",
+   "name": "花生",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "pumpkin_seed",
+   "name": "南瓜子",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "walnut",
+   "name": "核桃",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "cashew",
+   "name": "腰果",
+   "category": "堅果種子",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "pistachio",
+   "name": "開心果",
+   "category": "堅果種子",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "coffee",
+   "name": "咖啡",
+   "category": "茶飲",
+   "level": "low",
+   "aliases": [
+    "黑咖啡",
+    "美式咖啡"
+   ]
+  },
+  {
+   "id": "black_tea",
+   "name": "紅茶",
+   "category": "茶飲",
+   "level": "conditional",
+   "aliases": [],
+   "note": "180ml 以內為低"
+  },
+  {
+   "id": "green_tea",
+   "name": "綠茶",
+   "category": "茶飲",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "peppermint_tea",
+   "name": "薄荷茶",
+   "category": "茶飲",
+   "level": "low",
+   "aliases": []
+  },
+  {
+   "id": "chamomile_tea",
+   "name": "洋甘菊茶",
+   "category": "茶飲",
+   "level": "high",
+   "aliases": [
+    "洋甘菊"
+   ]
+  },
+  {
+   "id": "fennel_tea",
+   "name": "茴香茶",
+   "category": "茶飲",
+   "level": "high",
+   "aliases": [
+    "茴香"
+   ]
+  },
+  {
+   "id": "oolong_tea",
+   "name": "烏龍茶",
+   "category": "茶飲",
+   "level": "high",
+   "aliases": []
+  },
+  {
+   "id": "leek",
+   "name": "大蔥",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "韭蔥",
+    "青蒜白色部分"
+   ],
+   "source": "general",
+   "note": "白色莖部為高"
+  },
+  {
+   "id": "artichoke",
+   "name": "朝鮮薊",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "jerusalem_artichoke",
+   "name": "菊芋",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "洋薑"
+   ],
+   "source": "general",
+   "note": "含大量菊糖"
+  },
+  {
+   "id": "burdock",
+   "name": "牛蒡",
+   "category": "蔬菜",
+   "level": "high",
+   "aliases": [
+    "牛蒡絲"
+   ],
+   "source": "general",
+   "note": "含菊糖"
+  },
+  {
+   "id": "celery",
+   "name": "芹菜",
+   "category": "蔬菜",
+   "level": "conditional",
+   "aliases": [
+    "西洋芹",
+    "芹菜末"
+   ],
+   "source": "general",
+   "note": "少量（約 10g）為低，份量多為高"
+  },
+  {
+   "id": "broccoli",
+   "name": "綠花椰菜",
+   "category": "蔬菜",
+   "level": "conditional",
+   "aliases": [
+    "青花菜",
+    "西蘭花"
+   ],
+   "source": "general",
+   "note": "花的部分約 75g 以內為低；莖部較高"
+  },
+  {
+   "id": "pumpkin",
+   "name": "南瓜",
+   "category": "蔬菜",
+   "level": "conditional",
+   "aliases": [
+    "栗子南瓜",
+    "日本南瓜",
+    "南瓜湯"
+   ],
+   "source": "general",
+   "note": "日本南瓜約 75g 以內為低；奶油南瓜份量多時為高"
+  },
+  {
+   "id": "bean_sprout",
+   "name": "豆芽菜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "綠豆芽"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "green_bean",
+   "name": "四季豆",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "敏豆"
+   ],
+   "source": "general",
+   "note": "約 75g 以內"
+  },
+  {
+   "id": "lettuce",
+   "name": "生菜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "萵苣",
+    "美生菜",
+    "蘿蔓"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "water_spinach",
+   "name": "空心菜",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "蕹菜"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "gai_lan",
+   "name": "芥藍",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "芥蘭菜"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "chili",
+   "name": "辣椒",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "辣椒片"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "seaweed",
+   "name": "海苔",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [
+    "紫菜",
+    "海帶"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "olive",
+   "name": "橄欖",
+   "category": "蔬菜",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "fig",
+   "name": "無花果",
+   "category": "水果",
+   "level": "high",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "blackberry",
+   "name": "黑莓",
+   "category": "水果",
+   "level": "high",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "grapefruit",
+   "name": "葡萄柚",
+   "category": "水果",
+   "level": "high",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "juice_concentrate",
+   "name": "濃縮果汁",
+   "category": "水果",
+   "level": "high",
+   "aliases": [
+    "蘋果汁",
+    "果汁"
+   ],
+   "source": "general",
+   "note": "成分標示常見；大量果汁也偏高"
+  },
+  {
+   "id": "passion_fruit",
+   "name": "百香果",
+   "category": "水果",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "blueberry",
+   "name": "藍莓",
+   "category": "水果",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "raspberry",
+   "name": "覆盆子",
+   "category": "水果",
+   "level": "low",
+   "aliases": [
+    "樹莓"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "lemon_lime",
+   "name": "檸檬",
+   "category": "水果",
+   "level": "low",
+   "aliases": [
+    "萊姆",
+    "檸檬汁"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "star_fruit",
+   "name": "楊桃",
+   "category": "水果",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "milk_powder",
+   "name": "奶粉",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": [
+    "全脂奶粉",
+    "脫脂奶粉",
+    "乳粉"
+   ],
+   "source": "general",
+   "note": "成分標示常見，含乳糖"
+  },
+  {
+   "id": "soft_cheese",
+   "name": "新鮮軟質起司",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": [
+    "茅屋起司",
+    "瑞可塔起司",
+    "奶油乳酪"
+   ],
+   "source": "general",
+   "note": "含乳糖較多"
+  },
+  {
+   "id": "whey_concentrate",
+   "name": "濃縮乳清蛋白",
+   "category": "奶類及乳製品",
+   "level": "high",
+   "aliases": [
+    "乳清蛋白濃縮物",
+    "WPC",
+    "乳清粉"
+   ],
+   "source": "general",
+   "note": "含乳糖；分離乳清蛋白（WPI）為低"
+  },
+  {
+   "id": "whey_isolate",
+   "name": "分離乳清蛋白",
+   "category": "奶類及乳製品",
+   "level": "low",
+   "aliases": [
+    "WPI"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "butter",
+   "name": "牛油",
+   "category": "奶類及乳製品",
+   "level": "low",
+   "aliases": [
+    "無鹽奶油",
+    "有鹽奶油",
+    "butter"
+   ],
+   "source": "general",
+   "note": "塗麵包用的奶油；乳糖極少"
+  },
+  {
+   "id": "hard_cheese",
+   "name": "其他熟成起司",
+   "category": "奶類及乳製品",
+   "level": "low",
+   "aliases": [
+    "莫札瑞拉",
+    "布里",
+    "卡門貝爾",
+    "菲達",
+    "瑞士起司"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "glutinous_rice",
+   "name": "糯米",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [
+    "湯圓",
+    "麻糬",
+    "油飯",
+    "米糕"
+   ],
+   "source": "general",
+   "note": "湯圓、麻糬的餡料要另外看"
+  },
+  {
+   "id": "mung_bean_noodle",
+   "name": "冬粉",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [
+    "粉絲"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "millet",
+   "name": "小米",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "gluten_free_bread",
+   "name": "無麩質麵包",
+   "category": "穀類",
+   "level": "low",
+   "aliases": [],
+   "source": "general",
+   "note": "仍需確認沒有添加菊糖或蜂蜜"
+  },
+  {
+   "id": "silken_tofu",
+   "name": "嫩豆腐",
+   "category": "蛋白質",
+   "level": "high",
+   "aliases": [
+    "絹豆腐",
+    "豆花"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "soy_milk",
+   "name": "豆漿",
+   "category": "蛋白質",
+   "level": "high",
+   "aliases": [
+    "黃豆漿"
+   ],
+   "source": "general",
+   "note": "以整顆黃豆製成為高；以黃豆蛋白製成為低"
+  },
+  {
+   "id": "edamame",
+   "name": "毛豆",
+   "category": "蛋白質",
+   "level": "low",
+   "aliases": [],
+   "source": "general",
+   "note": "約一碗以內"
+  },
+  {
+   "id": "tempeh",
+   "name": "天貝",
+   "category": "蛋白質",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "agave",
+   "name": "龍舌蘭糖漿",
+   "category": "糖",
+   "level": "high",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "sorbitol",
+   "name": "山梨糖醇",
+   "category": "糖",
+   "level": "high",
+   "aliases": [
+    "山梨醇",
+    "E420"
+   ],
+   "source": "general",
+   "note": "糖醇；常見於無糖糖果、口香糖"
+  },
+  {
+   "id": "mannitol",
+   "name": "甘露醇",
+   "category": "糖",
+   "level": "high",
+   "aliases": [
+    "E421"
+   ],
+   "source": "general",
+   "note": "糖醇"
+  },
+  {
+   "id": "xylitol",
+   "name": "木糖醇",
+   "category": "糖",
+   "level": "high",
+   "aliases": [
+    "E967"
+   ],
+   "source": "general",
+   "note": "糖醇"
+  },
+  {
+   "id": "maltitol",
+   "name": "麥芽糖醇",
+   "category": "糖",
+   "level": "high",
+   "aliases": [
+    "E965"
+   ],
+   "source": "general",
+   "note": "糖醇；注意與麥芽糖不同"
+  },
+  {
+   "id": "isomalt",
+   "name": "異麥芽酮糖醇",
+   "category": "糖",
+   "level": "high",
+   "aliases": [
+    "巴糖醇",
+    "E953"
+   ],
+   "source": "general",
+   "note": "糖醇"
+  },
+  {
+   "id": "stevia",
+   "name": "甜菊",
+   "category": "糖",
+   "level": "low",
+   "aliases": [
+    "甜菊糖",
+    "甜菊糖苷"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "sucralose",
+   "name": "蔗糖素",
+   "category": "糖",
+   "level": "low",
+   "aliases": [
+    "三氯蔗糖",
+    "阿斯巴甜",
+    "代糖"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "almond",
+   "name": "杏仁",
+   "category": "堅果種子",
+   "level": "conditional",
+   "aliases": [
+    "杏仁果",
+    "杏仁片"
+   ],
+   "source": "general",
+   "note": "約 10 顆以內為低"
+  },
+  {
+   "id": "hazelnut",
+   "name": "榛果",
+   "category": "堅果種子",
+   "level": "conditional",
+   "aliases": [
+    "榛子"
+   ],
+   "source": "general",
+   "note": "約 10 顆以內為低"
+  },
+  {
+   "id": "pecan",
+   "name": "胡桃",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": [
+    "碧根果"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "pine_nut",
+   "name": "松子",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "chestnut",
+   "name": "栗子",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": [
+    "糖炒栗子"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "sesame",
+   "name": "芝麻",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": [
+    "白芝麻",
+    "黑芝麻"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "sunflower_seed",
+   "name": "葵花子",
+   "category": "堅果種子",
+   "level": "low",
+   "aliases": [
+    "葵瓜子"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "chicory",
+   "name": "菊苣",
+   "category": "茶飲",
+   "level": "high",
+   "aliases": [
+    "菊苣茶",
+    "菊苣咖啡"
+   ],
+   "source": "general",
+   "note": "含菊糖"
+  },
+  {
+   "id": "rum",
+   "name": "蘭姆酒",
+   "category": "茶飲",
+   "level": "high",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "sweet_wine",
+   "name": "甜酒",
+   "category": "茶飲",
+   "level": "high",
+   "aliases": [
+    "甜點酒",
+    "波特酒"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "beer_wine",
+   "name": "啤酒、葡萄酒",
+   "category": "茶飲",
+   "level": "low",
+   "aliases": [
+    "啤酒",
+    "紅酒",
+    "白酒"
+   ],
+   "source": "general",
+   "note": "約一杯以內"
+  },
+  {
+   "id": "onion_powder",
+   "name": "洋蔥粉",
+   "category": "調味料",
+   "level": "high",
+   "aliases": [],
+   "source": "general",
+   "note": "成分標示常見"
+  },
+  {
+   "id": "garlic_powder",
+   "name": "大蒜粉",
+   "category": "調味料",
+   "level": "high",
+   "aliases": [
+    "蒜粉"
+   ],
+   "source": "general",
+   "note": "成分標示常見"
+  },
+  {
+   "id": "stock_cube",
+   "name": "高湯塊",
+   "category": "調味料",
+   "level": "high",
+   "aliases": [
+    "雞湯塊",
+    "高湯粉",
+    "雞粉"
+   ],
+   "source": "general",
+   "note": "通常含洋蔥、大蒜"
+  },
+  {
+   "id": "curry_roux",
+   "name": "咖哩塊",
+   "category": "調味料",
+   "level": "high",
+   "aliases": [
+    "咖哩醬"
+   ],
+   "source": "general",
+   "note": "通常含小麥粉、洋蔥"
+  },
+  {
+   "id": "sacha_sauce",
+   "name": "沙茶醬",
+   "category": "調味料",
+   "level": "high",
+   "aliases": [],
+   "source": "general",
+   "note": "通常含大蒜、紅蔥頭"
+  },
+  {
+   "id": "garlic_oil",
+   "name": "蒜油",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [
+    "大蒜浸泡油"
+   ],
+   "source": "general",
+   "note": "只用油、不含蒜渣時為低"
+  },
+  {
+   "id": "soy_sauce",
+   "name": "醬油",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [
+    "醬油膏"
+   ],
+   "source": "general",
+   "note": "醬油膏可能加糖或洋蔥，看成分"
+  },
+  {
+   "id": "miso",
+   "name": "味噌",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [],
+   "source": "general",
+   "note": "約 2 小匙以內"
+  },
+  {
+   "id": "vinegar",
+   "name": "醋",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [
+    "白醋",
+    "烏醋",
+    "米醋"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "fish_sauce",
+   "name": "魚露",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "oyster_sauce",
+   "name": "蠔油",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "mayonnaise",
+   "name": "美乃滋",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [
+    "沙拉醬"
+   ],
+   "source": "general",
+   "note": "需確認不含大蒜或洋蔥"
+  },
+  {
+   "id": "mustard",
+   "name": "芥末",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [
+    "黃芥末",
+    "山葵"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "basic_seasoning",
+   "name": "鹽、胡椒、香草",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [
+    "鹽",
+    "胡椒",
+    "九層塔",
+    "香菜",
+    "羅勒",
+    "迷迭香"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "cooking_oil",
+   "name": "食用油",
+   "category": "調味料",
+   "level": "low",
+   "aliases": [
+    "沙拉油",
+    "橄欖油",
+    "麻油",
+    "香油"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "inulin",
+   "name": "菊糖",
+   "category": "添加物",
+   "level": "high",
+   "aliases": [
+    "菊苣纖維",
+    "菊苣根纖維",
+    "inulin"
+   ],
+   "source": "general",
+   "note": "膳食纖維添加物"
+  },
+  {
+   "id": "fos",
+   "name": "果寡糖",
+   "category": "添加物",
+   "level": "high",
+   "aliases": [
+    "寡果糖",
+    "FOS"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "gos",
+   "name": "半乳寡糖",
+   "category": "添加物",
+   "level": "high",
+   "aliases": [
+    "GOS"
+   ],
+   "source": "general"
+  },
+  {
+   "id": "lactose",
+   "name": "乳糖",
+   "category": "添加物",
+   "level": "high",
+   "aliases": [],
+   "source": "general"
+  }
+ ],
+ "sources": {
+  "table": "使用者提供的表格",
+  "general": "補充：一般 FODMAP 常識（參考 Monash 大學資料）"
+ }
+}
