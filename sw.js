@@ -1,8 +1,8 @@
-const CACHE_VERSION = "v2";
+const CACHE_VERSION = "v3";
 const CACHE_NAME = `fodmap-shell-${CACHE_VERSION}`;
 const SHELL = [
   "./", "./index.html", "./styles.css", "./app.js", "./classify.js", "./claude.js", "./image.js",
-  "./manifest.webmanifest", "./data/fodmap.json",
+  "./manifest.webmanifest", "./data/fodmap.json", "./data/cholesterol.json",
   "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png",
 ];
 

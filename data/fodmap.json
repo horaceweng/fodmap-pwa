@@ -713,8 +713,6 @@
     "牛肉",
     "豬肉",
     "雞肉",
-    "魚肉",
-    "魚",
     "羊肉"
    ],
    "note": "牛、豬、雞、魚等未加工肉類"
@@ -1668,7 +1666,8 @@
    "category": "調味料",
    "level": "low",
    "aliases": [
-    "沙拉醬"
+    "沙拉醬",
+    "蛋黃醬"
    ],
    "source": "general",
    "note": "需確認不含大蒜或洋蔥"
@@ -1752,6 +1751,193 @@
    "category": "添加物",
    "level": "high",
    "aliases": [],
+   "source": "general"
+  },
+  {
+   "id": "fish",
+   "name": "魚",
+   "aliases": [
+    "魚肉",
+    "鮭魚",
+    "鯖魚",
+    "虱目魚",
+    "鱈魚",
+    "鯛魚",
+    "吳郭魚",
+    "鮪魚",
+    "生魚片"
+   ],
+   "note": "未加工的魚為低；注意醬汁與醃料",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "squid",
+   "name": "魷魚／花枝類",
+   "aliases": [
+    "魷魚",
+    "花枝",
+    "透抽",
+    "小卷",
+    "中卷",
+    "章魚",
+    "墨魚",
+    "軟絲"
+   ],
+   "note": "未加工的為低；注意醬汁",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "crab",
+   "name": "蟹",
+   "aliases": [
+    "螃蟹",
+    "蟹肉",
+    "花蟹",
+    "紅蟳",
+    "蟹管肉"
+   ],
+   "note": "蟹黃請選「魚卵／蟹黃」",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "shellfish",
+   "name": "貝類",
+   "aliases": [
+    "蛤蜊",
+    "蚵仔",
+    "牡蠣",
+    "干貝",
+    "扇貝",
+    "淡菜",
+    "孔雀蛤",
+    "鮑魚",
+    "螺肉",
+    "九孔"
+   ],
+   "note": "未加工的為低",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "fish_roe",
+   "name": "魚卵／蟹黃",
+   "aliases": [
+    "魚卵",
+    "烏魚子",
+    "鮭魚卵",
+    "明太子",
+    "柳葉魚卵",
+    "蟹黃",
+    "蝦卵",
+    "飛魚卵",
+    "蟹膏"
+   ],
+   "note": "未加工的為低；明太子等醃製品需看調味",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "dried_seafood",
+   "name": "小魚乾／蝦米",
+   "aliases": [
+    "小魚乾",
+    "丁香魚",
+    "魩仔魚",
+    "蝦米",
+    "蝦皮",
+    "櫻花蝦",
+    "魷魚絲"
+   ],
+   "note": "本身為低；調味過的零食需看成分",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "organ_meat",
+   "name": "內臟",
+   "aliases": [
+    "豬肝",
+    "雞肝",
+    "鵝肝",
+    "腰子",
+    "豬腰",
+    "大腸",
+    "豬肚",
+    "雞心",
+    "雞胗",
+    "鴨胗",
+    "腦",
+    "骨髓"
+   ],
+   "note": "本身為低；滷製、麻油料理需看醬汁",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "egg_white",
+   "name": "蛋白",
+   "aliases": [
+    "蛋清",
+    "蛋白液"
+   ],
+   "note": "只有蛋白的部分",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "egg_yolk",
+   "name": "蛋黃",
+   "aliases": [
+    "鹹蛋黃",
+    "蛋黃粉"
+   ],
+   "note": "只有蛋黃的部分；整顆蛋請選「蛋」",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "fatty_meat",
+   "name": "肥肉／帶皮肉",
+   "aliases": [
+    "五花肉",
+    "肥肉",
+    "雞皮",
+    "豬皮",
+    "豬油",
+    "牛油（牛脂）",
+    "肋排",
+    "豬腳",
+    "爌肉"
+   ],
+   "note": "未加工的為低；爌肉、豬腳等滷製料理需看醬汁",
+   "category": "蛋白質",
+   "level": "low",
+   "source": "general"
+  },
+  {
+   "id": "coconut",
+   "name": "椰子製品",
+   "aliases": [
+    "椰奶",
+    "椰漿",
+    "椰子油",
+    "椰絲"
+   ],
+   "note": "椰子油為低；椰奶約半杯以內為低，量多含山梨糖醇與多元醇",
+   "category": "調味料",
+   "level": "conditional",
    "source": "general"
   }
  ],

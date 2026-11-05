@@ -1,8 +1,12 @@
 // 查表分類：純函式，無 DOM
-export function buildIndex(db) {
+export function buildIndex(db, cholDb) {
   const foods = db.foods || [];
   const byId = new Map(foods.map((f) => [f.id, f]));
-  return { byId, foods, categories: db.categories || [], levels: db.levels || {} };
+  const chol = new Map(Object.entries((cholDb && cholDb.foods) || {}).map(([id, c]) => [id, { level: c.level, note: c.note || "", satfat: !!c.satfat }]));
+  return {
+    byId, foods, categories: db.categories || [], levels: db.levels || {},
+    chol, cholLevels: (cholDb && cholDb.levels) || {}, cholSource: (cholDb && cholDb.source) || "", cholThresholds: (cholDb && cholDb.thresholds) || "",
+  };
 }
 
 function mergeDetections(detections) {
@@ -52,6 +56,30 @@ export function classify(detections, index) {
     level: out.high.length ? "high" : out.conditional.length ? "conditional" : "low",
     highNames: out.high.map((i) => i.name),
     conditionalNames: out.conditional.map((i) => i.name),
+    unknownCount: out.unknown.length,
+  };
+  return out;
+}
+
+export function cholOf(foodId, index) {
+  return index.chol.get(foodId) || { level: "unknown", note: "", satfat: false };
+}
+
+export function classifyCholesterol(detections, index) {
+  const out = { high: [], moderate: [], low: [], none: [], unknown: [] };
+  for (const m of mergeDetections(detections)) {
+    const food = index.byId.get(m.food_id);
+    const label = m.labels.join("、");
+    const c = food ? cholOf(m.food_id, index) : { level: "unknown", note: "", satfat: false };
+    const lv = out[c.level] ? c.level : "unknown";
+    out[lv].push({ food_id: food ? m.food_id : "unknown", name: food ? food.name : label || "未知食物", label, level: lv, note: c.note, satfat: c.satfat });
+  }
+  const names = (a) => a.map((i) => i.name);
+  out.verdict = {
+    level: out.high.length ? "high" : out.moderate.length ? "moderate" : "low",
+    highNames: names(out.high),
+    moderateNames: names(out.moderate),
+    satfatNames: names(["high", "moderate", "low", "none", "unknown"].flatMap((k) => out[k]).filter((i) => i.satfat)),
     unknownCount: out.unknown.length,
   };
   return out;

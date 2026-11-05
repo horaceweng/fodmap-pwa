@@ -93,3 +93,18 @@ label { display: block; font-weight: 700; margin: 14px 0 6px; }
 .tag.src { background: transparent; color: var(--muted); font-size: .7rem; }
 .muted.small { font-size: .8rem; }
 .card.empty { background: var(--card); color: var(--muted); text-align: center; }
+
+/* v3 cholesterol */
+.verdict.chol-high { background: var(--high-bg); color: var(--high); border-color: var(--high); }
+.verdict.chol-moderate { background: var(--cond-bg); color: var(--cond); border-color: var(--cond); }
+.verdict.chol-low, .verdict.chol-none { background: var(--low-bg); color: var(--low); border-color: var(--low); }
+.item.chol-high { border-left-color: var(--high); }
+.item.chol-moderate { border-left-color: var(--cond); }
+.item.chol-low, .item.chol-none { border-left-color: var(--low); }
+.badge.chol-high { background: var(--high-bg); color: var(--high); }
+.badge.chol-moderate { background: var(--cond-bg); color: var(--cond); }
+.badge.chol-low, .badge.chol-none { background: var(--low-bg); color: var(--low); }
+.tag.chol-high { color: var(--high); border-color: var(--high); }
+.tag.chol-moderate { color: var(--cond); border-color: var(--cond); }
+.check { display: flex; align-items: center; gap: 8px; font-weight: 400; margin: 14px 0; }
+.check input { width: 20px; height: 20px; }

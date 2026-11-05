@@ -1,0 +1,626 @@
+{
+ "source": "一般營養常識（約略數值，參考 USDA FoodData Central 與衛福部食品營養成分資料庫），以每 100 公克可食部分計",
+ "levels": {
+  "high": "高膽固醇",
+  "moderate": "中等",
+  "low": "低",
+  "none": "不含"
+ },
+ "thresholds": "高：≥200 mg／100g；中等：50–199；低：1–49；不含：0（植物性食物）",
+ "foods": {
+  "eggplant": {
+   "level": "none"
+  },
+  "napa_cabbage": {
+   "level": "none"
+  },
+  "cabbage": {
+   "level": "none"
+  },
+  "bell_pepper": {
+   "level": "none"
+  },
+  "carrot": {
+   "level": "none"
+  },
+  "daikon": {
+   "level": "none"
+  },
+  "cucumber": {
+   "level": "none"
+  },
+  "zucchini": {
+   "level": "none"
+  },
+  "spinach": {
+   "level": "none"
+  },
+  "tomato": {
+   "level": "none"
+  },
+  "bamboo_shoot": {
+   "level": "none"
+  },
+  "bok_choy": {
+   "level": "none"
+  },
+  "choy_sum": {
+   "level": "none"
+  },
+  "wood_ear": {
+   "level": "none"
+  },
+  "okra": {
+   "level": "none"
+  },
+  "scallion_green": {
+   "level": "none"
+  },
+  "ginger": {
+   "level": "none"
+  },
+  "asparagus": {
+   "level": "none"
+  },
+  "cauliflower": {
+   "level": "none"
+  },
+  "pea": {
+   "level": "none"
+  },
+  "sugar_snap_pea": {
+   "level": "none"
+  },
+  "snow_pea": {
+   "level": "none"
+  },
+  "broad_bean": {
+   "level": "none"
+  },
+  "bitter_melon_wild": {
+   "level": "none"
+  },
+  "mushroom": {
+   "level": "none"
+  },
+  "shiitake": {
+   "level": "none"
+  },
+  "enoki": {
+   "level": "none"
+  },
+  "onion": {
+   "level": "none"
+  },
+  "brussels_sprout": {
+   "level": "none"
+  },
+  "garlic": {
+   "level": "none"
+  },
+  "shallot": {
+   "level": "none"
+  },
+  "scallion_white": {
+   "level": "none"
+  },
+  "kiwi": {
+   "level": "none"
+  },
+  "grape": {
+   "level": "none"
+  },
+  "cantaloupe": {
+   "level": "none"
+  },
+  "melon": {
+   "level": "none"
+  },
+  "papaya": {
+   "level": "none"
+  },
+  "citrus": {
+   "level": "none"
+  },
+  "pineapple": {
+   "level": "none"
+  },
+  "strawberry": {
+   "level": "none"
+  },
+  "banana": {
+   "level": "none"
+  },
+  "dragon_fruit": {
+   "level": "none"
+  },
+  "apple": {
+   "level": "none"
+  },
+  "cherry": {
+   "level": "none"
+  },
+  "dried_fruit": {
+   "level": "none"
+  },
+  "mango": {
+   "level": "none"
+  },
+  "peach": {
+   "level": "none"
+  },
+  "pear": {
+   "level": "none"
+  },
+  "plum": {
+   "level": "none"
+  },
+  "watermelon": {
+   "level": "none"
+  },
+  "avocado": {
+   "level": "none"
+  },
+  "lychee": {
+   "level": "none"
+  },
+  "lactose_free_milk": {
+   "level": "low",
+   "note": "與一般牛奶相近，約 10 mg／100ml"
+  },
+  "almond_milk": {
+   "level": "none"
+  },
+  "cheddar": {
+   "level": "moderate",
+   "note": "約 100 mg／100g；飽和脂肪高",
+   "satfat": true
+  },
+  "parmesan": {
+   "level": "moderate",
+   "note": "約 70–90 mg／100g；飽和脂肪高",
+   "satfat": true
+  },
+  "milk": {
+   "level": "low",
+   "note": "全脂約 10–15 mg／100ml"
+  },
+  "cream": {
+   "level": "moderate",
+   "note": "鮮奶油約 110–140 mg／100g；飽和脂肪高",
+   "satfat": true
+  },
+  "custard": {
+   "level": "moderate",
+   "note": "含蛋黃，約 100 mg／100g"
+  },
+  "condensed_milk": {
+   "level": "low",
+   "note": "約 30 mg／100g"
+  },
+  "ice_cream": {
+   "level": "low",
+   "note": "約 40–50 mg／100g；飽和脂肪偏高",
+   "satfat": true
+  },
+  "yogurt": {
+   "level": "low",
+   "note": "約 5–15 mg／100g"
+  },
+  "white_rice": {
+   "level": "none"
+  },
+  "brown_rice": {
+   "level": "none"
+  },
+  "rice_noodle": {
+   "level": "none"
+  },
+  "oats": {
+   "level": "none"
+  },
+  "quinoa": {
+   "level": "none"
+  },
+  "buckwheat_noodle": {
+   "level": "none"
+  },
+  "sourdough": {
+   "level": "none"
+  },
+  "chinese_yam": {
+   "level": "none"
+  },
+  "corn": {
+   "level": "none"
+  },
+  "sweet_potato": {
+   "level": "none"
+  },
+  "potato": {
+   "level": "none"
+  },
+  "taro": {
+   "level": "none"
+  },
+  "wheat_products": {
+   "level": "low",
+   "note": "麵條、吐司本身很少；蛋糕、可頌、餅乾常含蛋與奶油，可能更高"
+  },
+  "fresh_meat": {
+   "level": "moderate",
+   "note": "瘦肉約 60–90 mg／100g；建議選瘦肉、去皮"
+  },
+  "shrimp": {
+   "level": "moderate",
+   "note": "約 150–190 mg／100g，屬偏高；蝦頭、蝦卵更高"
+  },
+  "egg": {
+   "level": "high",
+   "note": "約 370 mg／100g；一顆蛋約 190 mg，幾乎都在蛋黃"
+  },
+  "tofu": {
+   "level": "none"
+  },
+  "whole_beans": {
+   "level": "none"
+  },
+  "processed_meat": {
+   "level": "moderate",
+   "note": "約 50–90 mg／100g，且常含較多飽和脂肪與鈉",
+   "satfat": true
+  },
+  "dark_chocolate": {
+   "level": "none",
+   "note": "幾乎不含；可可脂含飽和脂肪"
+  },
+  "maple_syrup": {
+   "level": "none"
+  },
+  "maltose": {
+   "level": "none"
+  },
+  "sugar": {
+   "level": "none"
+  },
+  "hfcs": {
+   "level": "none"
+  },
+  "honey": {
+   "level": "none"
+  },
+  "sugar_free_candy": {
+   "level": "none"
+  },
+  "macadamia": {
+   "level": "none"
+  },
+  "peanut": {
+   "level": "none"
+  },
+  "pumpkin_seed": {
+   "level": "none"
+  },
+  "walnut": {
+   "level": "none"
+  },
+  "cashew": {
+   "level": "none"
+  },
+  "pistachio": {
+   "level": "none"
+  },
+  "coffee": {
+   "level": "none"
+  },
+  "black_tea": {
+   "level": "none"
+  },
+  "green_tea": {
+   "level": "none"
+  },
+  "peppermint_tea": {
+   "level": "none"
+  },
+  "chamomile_tea": {
+   "level": "none"
+  },
+  "fennel_tea": {
+   "level": "none"
+  },
+  "oolong_tea": {
+   "level": "none"
+  },
+  "leek": {
+   "level": "none"
+  },
+  "artichoke": {
+   "level": "none"
+  },
+  "jerusalem_artichoke": {
+   "level": "none"
+  },
+  "burdock": {
+   "level": "none"
+  },
+  "celery": {
+   "level": "none"
+  },
+  "broccoli": {
+   "level": "none"
+  },
+  "pumpkin": {
+   "level": "none"
+  },
+  "bean_sprout": {
+   "level": "none"
+  },
+  "green_bean": {
+   "level": "none"
+  },
+  "lettuce": {
+   "level": "none"
+  },
+  "water_spinach": {
+   "level": "none"
+  },
+  "gai_lan": {
+   "level": "none"
+  },
+  "chili": {
+   "level": "none"
+  },
+  "seaweed": {
+   "level": "none"
+  },
+  "olive": {
+   "level": "none"
+  },
+  "fig": {
+   "level": "none"
+  },
+  "blackberry": {
+   "level": "none"
+  },
+  "grapefruit": {
+   "level": "none"
+  },
+  "juice_concentrate": {
+   "level": "none"
+  },
+  "passion_fruit": {
+   "level": "none"
+  },
+  "blueberry": {
+   "level": "none"
+  },
+  "raspberry": {
+   "level": "none"
+  },
+  "lemon_lime": {
+   "level": "none"
+  },
+  "star_fruit": {
+   "level": "none"
+  },
+  "milk_powder": {
+   "level": "moderate",
+   "note": "全脂奶粉約 100 mg／100g，脫脂奶粉很低"
+  },
+  "soft_cheese": {
+   "level": "moderate",
+   "note": "奶油乳酪約 100 mg／100g；茅屋起司較低",
+   "satfat": true
+  },
+  "whey_concentrate": {
+   "level": "low",
+   "note": "含少量"
+  },
+  "whey_isolate": {
+   "level": "low",
+   "note": "含極少量"
+  },
+  "butter": {
+   "level": "high",
+   "note": "約 215 mg／100g，一次用量通常不多；飽和脂肪很高",
+   "satfat": true
+  },
+  "hard_cheese": {
+   "level": "moderate",
+   "note": "約 70–100 mg／100g；飽和脂肪高",
+   "satfat": true
+  },
+  "glutinous_rice": {
+   "level": "none"
+  },
+  "mung_bean_noodle": {
+   "level": "none"
+  },
+  "millet": {
+   "level": "none"
+  },
+  "gluten_free_bread": {
+   "level": "none"
+  },
+  "silken_tofu": {
+   "level": "none"
+  },
+  "soy_milk": {
+   "level": "none"
+  },
+  "edamame": {
+   "level": "none"
+  },
+  "tempeh": {
+   "level": "none"
+  },
+  "agave": {
+   "level": "none"
+  },
+  "sorbitol": {
+   "level": "none"
+  },
+  "mannitol": {
+   "level": "none"
+  },
+  "xylitol": {
+   "level": "none"
+  },
+  "maltitol": {
+   "level": "none"
+  },
+  "isomalt": {
+   "level": "none"
+  },
+  "stevia": {
+   "level": "none"
+  },
+  "sucralose": {
+   "level": "none"
+  },
+  "almond": {
+   "level": "none"
+  },
+  "hazelnut": {
+   "level": "none"
+  },
+  "pecan": {
+   "level": "none"
+  },
+  "pine_nut": {
+   "level": "none"
+  },
+  "chestnut": {
+   "level": "none"
+  },
+  "sesame": {
+   "level": "none"
+  },
+  "sunflower_seed": {
+   "level": "none"
+  },
+  "chicory": {
+   "level": "none"
+  },
+  "rum": {
+   "level": "none"
+  },
+  "sweet_wine": {
+   "level": "none"
+  },
+  "beer_wine": {
+   "level": "none"
+  },
+  "onion_powder": {
+   "level": "none"
+  },
+  "garlic_powder": {
+   "level": "none"
+  },
+  "stock_cube": {
+   "level": "low",
+   "note": "可能含少量動物油脂"
+  },
+  "curry_roux": {
+   "level": "low",
+   "note": "常含牛油或豬油，飽和脂肪偏高",
+   "satfat": true
+  },
+  "sacha_sauce": {
+   "level": "low",
+   "note": "含扁魚、蝦米，一次用量少"
+  },
+  "garlic_oil": {
+   "level": "none"
+  },
+  "soy_sauce": {
+   "level": "none"
+  },
+  "miso": {
+   "level": "none"
+  },
+  "vinegar": {
+   "level": "none"
+  },
+  "fish_sauce": {
+   "level": "low",
+   "note": "含極少量"
+  },
+  "oyster_sauce": {
+   "level": "low",
+   "note": "含極少量"
+  },
+  "mayonnaise": {
+   "level": "low",
+   "note": "含蛋黃，約 40–60 mg／100g"
+  },
+  "mustard": {
+   "level": "none"
+  },
+  "basic_seasoning": {
+   "level": "none"
+  },
+  "cooking_oil": {
+   "level": "none",
+   "note": "植物油不含膽固醇；豬油、牛油請選「肥肉／帶皮肉」"
+  },
+  "inulin": {
+   "level": "none"
+  },
+  "fos": {
+   "level": "none"
+  },
+  "gos": {
+   "level": "none"
+  },
+  "lactose": {
+   "level": "none"
+  },
+  "fish": {
+   "level": "moderate",
+   "note": "約 50–80 mg／100g；魚油對血脂有益，通常不需限制"
+  },
+  "squid": {
+   "level": "high",
+   "note": "約 230–300 mg／100g"
+  },
+  "crab": {
+   "level": "moderate",
+   "note": "約 60–100 mg／100g；蟹黃另計"
+  },
+  "shellfish": {
+   "level": "moderate",
+   "note": "約 40–100 mg／100g，依種類不同"
+  },
+  "fish_roe": {
+   "level": "high",
+   "note": "約 300–500 mg／100g；烏魚子、蟹黃都很高"
+  },
+  "dried_seafood": {
+   "level": "high",
+   "note": "蝦米、小魚乾乾燥後濃縮，可達 300–700 mg／100g；一次用量通常不多"
+  },
+  "organ_meat": {
+   "level": "high",
+   "note": "豬肝約 300 mg、雞肝約 560 mg、腦可超過 2000 mg／100g"
+  },
+  "egg_white": {
+   "level": "none",
+   "note": "蛋白不含膽固醇"
+  },
+  "egg_yolk": {
+   "level": "high",
+   "note": "約 1000 mg／100g；一顆蛋黃約 190 mg"
+  },
+  "fatty_meat": {
+   "level": "moderate",
+   "note": "約 70–110 mg／100g，但飽和脂肪很高",
+   "satfat": true
+  },
+  "coconut": {
+   "level": "none",
+   "note": "不含膽固醇，但椰子油、椰漿的飽和脂肪很高",
+   "satfat": true
+  }
+ }
+}

@@ -1,4 +1,4 @@
-import { buildIndex, classify, searchFoods } from "./classify.js";
+import { buildIndex, classify, classifyCholesterol, cholOf, searchFoods } from "./classify.js";
 import { prepareImage } from "./image.js";
 
 const $app = document.getElementById("app");
@@ -23,6 +23,8 @@ function lsGet(k) { try { return localStorage.getItem(k); } catch (_) { return n
 function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (_) {} }
 const getKey = () => lsGet("fodmap.apiKey") || "";
 const getModel = () => lsGet("fodmap.model") || MODELS[0][0];
+const cholOn = () => index.chol.size > 0 && lsGet("fodmap.showChol") !== "0";
+const CHOL_BADGE = { high: "高", moderate: "中", low: "低", none: "無" };
 
 // ---- helpers ----
 function esc(s) {
@@ -41,7 +43,7 @@ function renderHome() {
   $app.innerHTML = `
     <div class="topbar"><span style="width:44px"></span><span></span>
       <button class="icon-btn" id="goSettings" aria-label="設定">⚙️</button></div>
-    <div class="hero"><h1>腹敏拍拍</h1><p>拍下餐點，快速檢查 FODMAP 腹敏食材</p></div>
+    <div class="hero"><h1>腹敏拍拍</h1><p>${cholOn() ? "拍下餐點，檢查 FODMAP 腹敏食材與膽固醇" : "拍下餐點，快速檢查 FODMAP 腹敏食材"}</p></div>
     ${noKey ? `<div class="card notice">尚未設定 Anthropic API Key，請先到 ⚙️ 設定輸入金鑰才能辨識照片。<button class="btn" id="noticeSettings">前往設定</button></div>` : ""}
     <button class="btn primary big" id="btnMeal">🍱 拍食物<span class="btn-sub">料理好的或生的食材都可以</span></button>
     <button class="link-btn" id="galMeal">或從相簿選擇</button>
@@ -59,10 +61,12 @@ function renderHome() {
 const srcTag = (f) => (f.source === "general" ? `<span class="tag src">補充</span>` : "");
 
 function itemHtml(it, lv, i) {
+  const cl = cholOn() ? cholOf(it.food_id, index).level : "";
+  const cholTag = cl === "high" ? `<span class="tag chol-high">膽固醇高</span>` : cl === "moderate" ? `<span class="tag chol-moderate">膽固醇中等</span>` : "";
   const showDesc = it.label && it.label !== it.name;
   const lowConf = it.confidence < 0.5;
   return `<div class="card item ${lv}">
-    <div><span class="badge ${lv}">${LEVEL_UI[lv].emoji} ${LEVEL_UI[lv].badge}</span><span class="name">${esc(it.name)}</span>${srcTag(it)}
+    <div><span class="badge ${lv}">${LEVEL_UI[lv].emoji} ${LEVEL_UI[lv].badge}</span><span class="name">${esc(it.name)}</span>${cholTag}${srcTag(it)}
       ${it.visible === false ? `<span class="tag">推測</span>` : ""}${lowConf ? `<span class="tag">不確定</span>` : ""}</div>
     ${showDesc ? `<div class="desc">模型看到：${esc(it.label)}</div>` : ""}
     ${it.note ? `<div class="note">${esc(it.note)}</div>` : ""}
@@ -83,6 +87,25 @@ function verdictHtml(r) {
   return `<div class="card verdict ${v.level}">${main}${sub}</div>`;
 }
 
+function cholVerdictHtml(c) {
+  const v = c.verdict, j = (a) => a.map(esc).join("、");
+  const main = v.level === "high" ? `🥚 膽固醇高：${j(v.highNames)}` : v.level === "moderate" ? `🥚 膽固醇中等：${j(v.moderateNames)}（適量即可）` : `✅ 膽固醇低`;
+  const sub = (v.satfatNames.length ? `<span class="sub">飽和脂肪高：${j(v.satfatNames)}（也會讓血中膽固醇上升）</span>` : "") +
+    (v.unknownCount ? `<span class="sub">另有 ${v.unknownCount} 項無法確定</span>` : "");
+  return `<div class="card verdict chol-${v.level}">${main}${sub}</div>`;
+}
+
+function cholDetailHtml(c) {
+  const j = (a) => a.map((i) => esc(i.name)).join("、");
+  const cards = ["high", "moderate"].map((lv) => c[lv].map((it) => `<div class="card item chol-${lv}">
+    <div><span class="badge chol-${lv}">${CHOL_BADGE[lv]}</span><span class="name">${esc(it.name)}</span>${it.satfat ? `<span class="tag">飽和脂肪高</span>` : ""}</div>
+    ${it.note ? `<div class="note">${esc(it.note)}</div>` : ""}</div>`).join("")).join("");
+  const lows = [...c.low, ...c.none];
+  return `<h2 class="group-title">🥚 膽固醇</h2>${cards}` +
+    (lows.length ? `<p class="muted">低或不含膽固醇：${j(lows)}</p>` : "") +
+    (c.unknown.length ? `<p class="muted">無法確定：${j(c.unknown)}</p>` : "");
+}
+
 let lastResult = null;
 function renderResult() {
   let body;
@@ -95,6 +118,7 @@ function renderResult() {
   } else {
     const r = (lastResult = classify(state.detections, index));
     const empty = state.detections.length === 0;
+    const ch = cholOn() ? classifyCholesterol(state.detections, index) : null;
     const groups = ["high", "conditional", "low", "unknown"].map((lv) =>
       r[lv].length ? `<h2 class="group-title">${LEVEL_UI[lv].emoji} ${LEVEL_UI[lv].title}</h2>${r[lv].map((it, i) => itemHtml(it, lv, i)).join("")}` : ""
     ).join("");
@@ -102,7 +126,7 @@ function renderResult() {
       ? `<div class="card empty">${esc(state.dish || "沒有辨識到任何項目")}</div>
       <button class="btn primary" id="retake">重新拍攝</button>
       <button class="btn" id="addManual">＋ 手動新增食材</button>`
-      : `${state.dish ? `<p class="muted">${esc(state.dish)}</p>` : ""}${verdictHtml(r)}${groups}
+      : `${state.dish ? `<p class="muted">${esc(state.dish)}</p>` : ""}${verdictHtml(r)}${ch ? cholVerdictHtml(ch) : ""}${groups}${ch ? cholDetailHtml(ch) : ""}
       <button class="btn" id="addManual">＋ 手動新增食材</button>`;
   }
   $app.innerHTML = `
@@ -111,7 +135,7 @@ function renderResult() {
     ${body}
     <p class="disclaimer">${state.mode === "label"
       ? "結果由 AI 讀取成分標示，僅供參考。成分排序代表含量多寡，排在後面的通常份量較少。請以實際包裝為準。"
-      : "結果由 AI 辨識，僅供參考，無法看出醬料與調味細節，不能取代營養師或醫師建議。"}</p>`;
+      : "結果由 AI 辨識，僅供參考，無法看出醬料與調味細節，不能取代營養師或醫師建議。"}${cholOn() ? "<br>膽固醇為一般營養資料的約略值，實際攝取量取決於份量；有高血脂問題請遵循醫師建議。" : ""}</p>`;
   $app.querySelector("#back").onclick = () => { cancelRun(); go("home"); };
   const c = $app.querySelector("#cancel"); if (c) c.onclick = () => { cancelRun(); go("home"); };
   const b2 = $app.querySelector("#back2"); if (b2) b2.onclick = () => go("home");
@@ -149,7 +173,9 @@ function addDetection(id, reason) {
 // ---- picker modal ----
 function foodRow(f) {
   const lv = LEVEL_UI[f.level] || LEVEL_UI.unknown;
-  return `<div><span class="badge ${f.level}">${lv.emoji} ${lv.badge}</span><span class="name">${esc(f.name)}</span>${srcTag(f)}</div>
+  const cl = cholOn() ? cholOf(f.id, index).level : "";
+  const cb = CHOL_BADGE[cl] ? `<span class="badge chol-${cl}">🥚 ${CHOL_BADGE[cl]}</span>` : "";
+  return `<div><span class="badge ${f.level}">${lv.emoji} ${lv.badge}</span><span class="name">${esc(f.name)}</span>${cb}${srcTag(f)}</div>
     ${f.note ? `<div class="muted">${esc(f.note)}</div>` : ""}`;
 }
 function openPicker(onPick) {
@@ -179,6 +205,7 @@ function renderSearch() {
   $app.innerHTML = `
     <div class="topbar"><button class="icon-btn" id="back" aria-label="返回">←</button><span class="title">查詢食物</span><span style="width:44px"></span></div>
     <p class="muted small">標『補充』的項目不在你原本的表格裡，是一般 FODMAP 常識。</p>
+    ${cholOn() ? `<p class="muted small">🥚 為膽固醇（每 100 公克）：高 ≥200 mg、中 50–199、低 1–49、無 = 植物性食物不含膽固醇。</p>` : ""}
     <input type="search" id="q" placeholder="輸入食物名稱或別名" autocomplete="off" value="${esc(state.query)}">
     <div id="list"></div>`;
   $app.querySelector("#back").onclick = () => go("home");
@@ -211,11 +238,13 @@ function renderSettings() {
     <p class="muted">金鑰只存在這台手機的瀏覽器裡。請到 Anthropic Console 為這個 App 建立專用金鑰並設定每月花費上限。</p>
     <label for="model">模型</label>
     <select id="model">${MODELS.map(([v, n]) => `<option value="${v}" ${v === getModel() ? "selected" : ""}>${n}</option>`).join("")}</select>
+    ${index.chol.size ? `<label class="check"><input type="checkbox" id="chol" ${lsGet("fodmap.showChol") !== "0" ? "checked" : ""}> 同時檢查膽固醇</label>` : ""}
     <button class="btn primary" id="test">測試連線</button>
     <div class="status" id="status" role="status"></div>`;
   const key = $app.querySelector("#key"), model = $app.querySelector("#model"), status = $app.querySelector("#status");
   key.oninput = () => lsSet("fodmap.apiKey", key.value.trim());
   model.onchange = () => lsSet("fodmap.model", model.value);
+  const cb = $app.querySelector("#chol"); if (cb) cb.onchange = () => lsSet("fodmap.showChol", cb.checked ? "1" : "0");
   $app.querySelector("#back").onclick = () => go("home");
   $app.querySelector("#test").onclick = async () => {
     lsSet("fodmap.apiKey", key.value.trim());
@@ -270,8 +299,11 @@ for (const id of ["cameraInput", "galleryInput"]) {
 (async function init() {
   render();
   try {
-    const res = await fetch("./data/fodmap.json");
-    index = buildIndex(await res.json());
+    const [foodDb, cholDb] = await Promise.all([
+      fetch("./data/fodmap.json").then((r) => r.json()),
+      fetch("./data/cholesterol.json").then((r) => r.json()).catch(() => null),
+    ]);
+    index = buildIndex(foodDb, cholDb);
   } catch (_) {
     $app.innerHTML = `<div class="card error">無法載入食物資料，請重新整理。</div>`;
     return;
